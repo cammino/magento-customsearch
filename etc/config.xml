@@ -1,0 +1,23 @@
+<config>
+	<modules>
+		<Cammino_Customsearch>
+			<version>0.0.1</version>
+		</Cammino_Customsearch>
+	</modules>
+	<global>
+		<models>
+			<catalogsearch_resource>
+				<rewrite>
+					<fulltext>Cammino_Customsearch_Model_Resource_Fulltext</fulltext>
+				</rewrite>
+			</catalogsearch_resource>
+		</models>
+		<helpers>
+			<catalogsearch>
+				<rewrite>
+					<data>Cammino_Customsearch_Helper_Data</data>
+				</rewrite>
+			</catalogsearch>
+		</helpers>
+	</global>
+</config>
