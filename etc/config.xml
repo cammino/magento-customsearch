@@ -5,6 +5,13 @@
 		</Cammino_Customsearch>
 	</modules>
 	<global>
+		<blocks>
+			<catalogsearch>
+				<rewrite>
+					<result>Cammino_Customsearch_Block_Result</result>
+				</rewrite>
+			</catalogsearch>
+		</blocks>
 		<models>
 			<catalogsearch_resource>
 				<rewrite>

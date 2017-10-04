@@ -6,7 +6,6 @@ class Cammino_Customsearch_Model_Resource_Fulltext extends Mage_CatalogSearch_Mo
     {
         $adapter = $this->_getWriteAdapter();
         $searchType = $object->getSearchType($query->getStoreId());
-
         $preparedTerms = Mage::getResourceHelper('catalogsearch')
             ->prepareTerms($queryText, $query->getMaxQueryWords());
 
