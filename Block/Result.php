@@ -16,7 +16,7 @@ class Cammino_Customsearch_Block_Result extends Mage_CatalogSearch_Block_Result
 
         $this->getListBlock()
             ->setAvailableOrders($availableOrders)
-            ->setDefaultDirection('asc')
+            ->setDefaultDirection('desc')
             ->setSortBy('relevance');
 
         return $this;
