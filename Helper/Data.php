@@ -26,7 +26,8 @@ class Cammino_Customsearch_Helper_Data extends Mage_CatalogSearch_Helper_Data
 		return $this->_queryText;
 	}
 
-	private function removeIgnored() {
+	private function removeIgnored() {		
+		$this->_ignored = (!empty(Mage::getStoreConfig('themeconfig_design/product_list/search_ignored_default'))) ? explode(",", Mage::getStoreConfig('themeconfig_design/product_list/search_ignored_words')) : array("a","o","e","de","do","com","sem","que","na","no","se","para");
 		$words = Mage::helper('core/string')->splitWords($this->_queryText, true);
 		$validatedWords = array();
 
